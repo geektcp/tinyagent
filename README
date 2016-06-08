@@ -1,0 +1,28 @@
+监控系统agent端，采集各种监控指标并上报到服务器端
+
+
+
+
+--------------------------------------------
+部署方法:
+
+1、配置安装路径及基础信息:
+cmake . -DCMAKE_INSTALL_PREFIX=/usr/local/monitor
+
+2、编译:
+make
+
+3、安装:
+make install
+
+4、编辑配置文件
+vim /usr/local/monitor/conf/monitor.conf
+
+5、启动
+/usr/local/monitor/monitor_agent
+
+6、打包成二进制包
+make package
+
+7、打包成源码包
+make package_source
