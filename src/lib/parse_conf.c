@@ -38,11 +38,11 @@ int init_para_conf(struct para_conf *para_conf_s)
         strcpy(para_conf_s->interface1, "em1");
         strcpy(para_conf_s->interface2, "em2");
 
-	strcpy(para_conf_s->url_proc_config, "http://192.168.1.209:8388/process/config");
-	strcpy(para_conf_s->url_report_post, "http://192.168.1.209:8388/report/post");
-	strcpy(para_conf_s->url_report_base, "http://192.168.1.209:8388/report/server");
-	strcpy(para_conf_s->url_report_proc, "http://192.168.1.209:8388/process/report");
-	strcpy(para_conf_s->url_report_mysql,"http://192.168.1.209:8388/report/mysql");
+	strcpy(para_conf_s->url_proc_config, "http://geektcp.com:8388/process/config");
+	strcpy(para_conf_s->url_report_post, "http://geektcp.com:8388/report/post");
+	strcpy(para_conf_s->url_report_base, "http://geektcp.com:8388/report/server");
+	strcpy(para_conf_s->url_report_proc, "http://geektcp.com:8388/process/report");
+	strcpy(para_conf_s->url_report_mysql,"http://geektcp.com:8388/report/mysql");
 
 	para_conf_s->time_monitor    = 360;
 	para_conf_s->time_update     = 600;
