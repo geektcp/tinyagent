@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cmake . -DCMAKE_INSTALL_PREFIX=/usr/local/monitor
+cmake . -DCMAKE_INSTALL_PREFIX=/usr/local/agent
 make
 make install
 
@@ -12,7 +12,6 @@ make package_source
 
 #无效
 #cpack -C CPackSourceConfig.cmake
-
 
 
 #old Makefile

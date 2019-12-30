@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.8)
 
 project (monitor_agent)
 
-#monitor_agent-1.2.3-Linux.tar.gz
+# tinyagent-1.2.3-Linux.tar.gz
 set (VERSION_MAJOR 1)
 set (VERSION_MINOR 2)
 set (VERSION_PATCH 3)
@@ -14,12 +14,11 @@ EXECUTE_PROCESS(COMMAND sh ./version.sh)
 
 aux_source_directory(./src/lib DIR_SRCS)
 
-add_executable(monitor_agent ${DIR_SRCS})
+add_executable(tinyagent ${DIR_SRCS})
 
-install (TARGETS monitor_agent DESTINATION bin)
-install (FILES ./src/conf/monitor.conf DESTINATION conf)
-install (FILES ./src/logs/monitor.log DESTINATION logs)
-
+install (TARGETS tinyagent DESTINATION bin)
+install (FILES ./conf/agent.conf DESTINATION conf)
+install (FILES ./src/logs DESTINATION logs)
 
 include (InstallRequiredSystemLibraries)
 set (CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
